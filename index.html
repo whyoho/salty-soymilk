@@ -6,29 +6,44 @@
     <title>Main Page</title>
   </head>
   <body>
-    <h1>
-      Welcome... 
-    </h1>
-    <h1 id = "textCursor">|</h1>
+    <div class = "title1">
+      <h1> Welcome... </h1> <h1 id = "textCursor">|</h1>
+    </div>
     <form method="post" action="/">
       <label for="name">Type your name here:</label>
       <input type="text" id="name">
       <input type="submit" id="submit" value="Submit...">
     </form>
-    <img src = "https://cdn.shopify.com/s/files/1/0231/6137/2752/products/BF_minini_lenini_02_1_2000x.jpg?v=1646241068" alt = "frog standing">
+    <br> <br>
+    <img src = "https://cdn.shopify.com/s/files/1/0231/6137/2752/products/BF_minini_lenini_02_1_2000x.jpg?v=1646241068" alt = "frog standing" id = frogStand>
     <style>
       body {
         background: palegreen;
       }
-      .header {
+      .title1 {
         text-align: center;
+        margin-right: 20%;
       }
       #submit {
         background-color: honeydew;
         border-radius: 5px;
+        border-width: 1px;
       }
       #submit:hover {
         opacity: 0.5;
+      }
+      #frogStand{
+        position: absolute;
+        transform: translate(80%);
+        width: 50%;
+      #textCursor{ 
+        animation: blink 0.5s 0s infinite;
+      @keyframes blink{
+        0%{
+          opacity: 1;
+        } 100% {
+          opacity: 0;
+        }
       }
     </style>
   </body>
