@@ -6,24 +6,39 @@
     <title>Main Page</title>
   </head>
   <body>
-    <div class = "title1">
-      <h1> Welcome... </h1> <h1 id = "textCursor">|</h1>
+    <div class = "texts">
+      <div class = "title1">
+        <h1> Welcome... </h1> 
+      </div>
+      <form method="post" action="/">
+        <label for="name">Type your name here:</label>
+        <input type="text" id="name">
+        <input type="submit" id="submit" value="Submit...">
+      </form>
     </div>
-    <form method="post" action="/">
-      <label for="name">Type your name here:</label>
-      <input type="text" id="name">
-      <input type="submit" id="submit" value="Submit...">
-    </form>
-    <br> <br>
-    <img src = "https://cdn.shopify.com/s/files/1/0231/6137/2752/products/BF_minini_lenini_02_1_2000x.jpg?v=1646241068" alt = "frog standing" id = frogStand>
+    <img src = "lenini stand transparent.png" alt = "frog standing" id = frogStand>
     <style>
+      
       body {
         background: palegreen;
       }
-      .title1 {
-        text-align: center;
-        margin-right: 20%;
+
+      @font-face {
+        font-family: 'Luminari', sans-serif;
+        src: url('https://fonts.cdnfonts.com/css/luminari');
       }
+      
+      .title1 {
+        font-size: 40px;
+        font-family: 'Luminari', sans-serif;
+      }
+
+      .texts{
+        position: absolute;
+        font-size: 120%;
+        text-align: center;
+      }
+      
       #submit {
         background-color: honeydew;
         border-radius: 5px;
@@ -32,12 +47,16 @@
       #submit:hover {
         opacity: 0.5;
       }
+      
       #frogStand{
         position: absolute;
         transform: translate(80%);
         width: 50%;
-      #textCursor{ 
-        animation: blink 0.5s 0s infinite;
+      }
+      .lenini{
+        text-align: right;
+      }
+      
       @keyframes blink{
         0%{
           opacity: 1;
@@ -45,6 +64,16 @@
           opacity: 0;
         }
       }
+
+      h1 {
+        color: seagreen;
+        font-family: 'Luminari', sans-serif;
+      }
+
+      form {
+        color: mediumseagreen;
+      }
+
     </style>
   </body>
 </html>
