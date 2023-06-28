@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href = "https://github.com/whyoho/salty-soymilk/blob/ad3833f0b51a2b821c922d59174ea2e71c7633f4/Pangolin-Regular.ttf?raw=true">
     <title>Main Page</title>
   </head>
   <body>
@@ -11,11 +12,13 @@
         <br> <br>
         <h1> Welcome... </h1> 
       </div>
+      <div class = "form">
       <form method="post" action="/">
         <label for="name">Type your name here:</label>
         <input type="text" id="name">
         <input type="submit" id="submit" value="Submit...">
       </form>
+      </div>
     </div>
     <div class = "lenini">
       <img src = "https://github.com/whyoho/salty-soymilk/blob/main/lenini%20stand%20transparent.png?raw=true" alt = "frog standing" id = frogStand>
@@ -25,6 +28,10 @@
       body {
         background: palegreen;
       }
+      
+      html {
+        cursor: url("https://github.com/whyoho/salty-soymilk/raw/main/01%20Frog%20Normal%20Select.cur"), auto;
+}
 
       @font-face {
         font-family: 'Luminari', sans-serif;
@@ -33,7 +40,7 @@
       
       .title1 {
         font-size: 40px;
-        font-family: 'Luminari', sans-serif;
+        font-family: 'Pangolin-Regular', sans-serif;
       }
 
       .texts{
@@ -54,16 +61,11 @@
       #frogStand{
         width: 50%;
       }
+      #frogStand:hover{
+        cursor: url("https://github.com/whyoho/salty-soymilk/raw/main/14%20Left%20Select.cur"), auto;
+      }
       .lenini{
         text-align: right;
-      }
-      
-      @keyframes blink{
-        0%{
-          opacity: 1;
-        } 100% {
-          opacity: 0;
-        }
       }
 
       h1 {
@@ -71,9 +73,12 @@
         font-family: 'Luminari', sans-serif;
       }
 
-      form {
+      .form{
         color: mediumseagreen;
-        margin-left: 30px;
+        margin-left: 10px;
+      }
+      form, label, input {
+        cursor: url("https://github.com/whyoho/salty-soymilk/raw/main/07%20Frog%20Handwriting%20Ver%201.cur"), auto;
       }
 
     </style>
