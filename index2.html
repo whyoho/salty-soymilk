@@ -9,6 +9,16 @@
     <title>Main Page</title>
   </head>
   <body>
+    <div class = "menu">
+      <image src = "https://images.squarespace-cdn.com/content/v1/5253327ee4b03949ba51bd5b/1381445422443-ZZKHEBH3V0FRQBYABG24/five+reasons" alt = "hand" id = "hand">
+      <iframe width="40" height="20"
+src="https://www.youtube.com/embed/1wOAhRAqb40?controls=0&autoplay=1&loop=1" id = "music">
+      </iframe>
+      <!--<div class = "volume">
+        <img src = "https://www.freeiconspng.com/thumbs/volume-icon/volume-icon-31.png" alt = "volumeOnButton" id = "volumeOn">
+        <img src = "https://cdn.icon-icons.com/icons2/1674/PNG/512/volumeoff_111172.png" alt = "volumeOffButton" id = "volumeOff">
+      </div> -->
+    </div>
     <div class = "header">
       <p id = "flattery">
         <span>W</span>ow.....what a magnificent name you possess. It is as if the gods themselves have blessed you with a divine moniker, something that sings to the ear like the chirps of a bird in the wilderness. 
@@ -25,33 +35,58 @@
       </p>
       <br><br>
       <h2 id = "selfDepreciating"> Anyways...we've wasted enough time, so why not waste some more by learning </h2>
-      <div class = "aboutMe">
-        <h1> About Me :D </h1>
-      </div>
+      <h1 class = "aboutMe"> About Me :D </h1>
     </div>
     <img src = "https://github.com/whyoho/salty-soymilk/blob/main/lenini%20stand%20transparent.png?raw=true" alt = "frog standing" id = "frogStand">
     <div class = "agePanel">
       <h3 id = "age"> Here's a list of all the ages I've been so far:</h3>
       <ol> 
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+        <li>eight</li>
+        <li>nine</li>
+        <li>ten</li>
+        <li>eleven</li>
+        <li>twelve</li>
+        <li>thirteen</li>
+        <li>fourteen</li>
+        <li>fifteen</li>
+        <li>sixteen</li>
       </ol>
-      <p> (disclaimer: may or may not be accurate) </p>
+      <p id = "disclaimer"> (disclaimer: may or may not be accurate) </p>
     </div>
+    <br> 
+    <image src = "https://github.com/whyoho/salty-soymilk/blob/main/lenini%20fell%20over.png?raw=true" alt = "frog fell" id = "frogFell">
+    <image src = "https://www.pngkit.com/png/full/166-1666460_official-pokemon-8-rowlet-flying-plush-pokmon.png" alt = "rowlet with wings out" id = "rowlet">
+    <div class = "funFacts">
+      <h3 id = "fact"> Here's some very specially curated fun facts about me!!</h3>
+      <ul> 
+        <li><a href = "https://www.youtube.com/channel/UCR8xPQpoOMHfBRXhlmvl0CA">I have 9 Youtube subscribers!!!</a><p>(i know what you're thinking, and you're right- 9 is a very big number!!! huge accomplishment.)</p></li>
+        <li>I am level 35 in Pokemon Go. (...)</li>
+        <li>I have 2 siblings!!!! One is old and one is young...and one's a sister and one's a brother...i will not elaborate!!!</li>
+        <li>i have 0 (zero) robux</li>
+        <li>i went to canada and lived to tell the tale!</li>
+        <li>i cannot vote (legally) (but...)</li>
+        <li>i can swim!!!! (which doesn't have anything to do with voting, but neither does my robux balance)</li>
+        <li>i like bulgogi dumplings (the bibigo brand) from costco but they are very oily</li>
+        <li>i am NOT 9 feet tall</li>
+        <li>I may or may not be fluent in English; this matter is subjective and totally up to your opinion</li>
+        <li>rowlet    =></li>
+        <li>if i had a nickel for every time i saw a squirrel eating a slice of school pizza, i'd have two nickels, which isn't a lot, but it's still weird that it happened twice</li>
+        <li>i was on the swim team at one point but the coach quit so i ended up going to a grand total of two or three practices</li>
+        <li>i have a terrible reaction time</li>
+        <li>my school laptop has lost several of its screws, and i think that says a lot about me as a person (and about our society today)</li>
+        <li>i tried to make a volume button for this webpage but i gave up....</li>
+        <li>i like seals!!! highly recommend checking out tokkaricenter_official on instagram for seal content LOL</li>
+      </ul>
+    </div>
+    <br>
+      <em><p id = "question"> ....high five? </p></em>
     <style>
       
       body {
@@ -59,17 +94,58 @@
         font-family: 'Pangolin', cursive;
       }
       
+      html {
+        cursor: url("https://github.com/whyoho/salty-soymilk/raw/main/01%20Frog%20Normal%20Select.cur"), auto;
+}
       .header {
         text-align: center;
         font-family: 'Pangolin', cursive;
       }
       
+      span {
+        font-size: 400%;
+        font-family: "Times New Roman", Times, serif;
+        float: left;
+      }
+      
+      div.menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        transform: translate(-30%);
+        width: 100px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: palegreen;
+        border: 3px groove mediumseagreen;
+        opacity: .6;
+        margin-bottom: 5px;
+      }
+      /*#volumeOn, #volumeOff{
+        width: 40px;
+        position: absolute;
+        left: 40px;
+        bottom: 2.5px;
+      }
+      #volumeOff{
+        opacity: 0;
+      }*/
+      #music{
+        opacity: 0;
+        bottom: 0;
+        right: 0;
+        width: 1px;
+      }
+        
+      h2 {
+        color: mediumseagreen;
+      }
       .aboutMe {
         background-color: peachpuff;
         text-align: center;
         font-family: 'Pangolin', cursive;
-        position: sticky;
-        top: 0px;
+        color: seagreen;
+        border-radius: 20px;
       }
       
       #flattery {
@@ -78,20 +154,90 @@
       }
       
       #frogStand{
-        width: 40%;
+        width: 60%;
         float: left;
+        cursor: url("https://github.com/whyoho/salty-soymilk/raw/main/14%20Left%20Select.cur"), auto;
+        padding-right: 30px;
       }
-      
-      .agePanel {
-        text-align: right;
+      #frogStand:hover{
+        animation: hop 2s infinite linear alternate;
+      }
+      #frogFell{
+        width: 60%;
+        cursor: url("https://github.com/whyoho/salty-soymilk/raw/main/14%20Left%20Select.cur"), auto;
+        margin-top: 10%;
+        float:left;
+        transform: translate(-10%);
+      }
+      #frogFell:hover{
+        animation: hop 5s infinite linear;
+      }
+      #rowlet{
+        width: 60%;
+        cursor: url("https://github.com/whyoho/salty-soymilk/raw/main/14%20Left%20Select.cur"), auto;
+        margin-top: 20px;
+        float:right;
+      }
+      #rowlet:hover{
+        animation: hop 1s infinite linear;
+      }
+      a {
+        cursor: url("https://github.com/whyoho/salty-soymilk/raw/main/14%20Left%20Select.cur"), auto;
+      }
+      .agePanel, .funFacts {
         font-family: 'Pangolin', cursive;
         background-color: peachpuff;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.3), rgba(117, 19, 93, 0.3));
+        color: seagreen;
+      }
+      .agePanel{
+        text-align: center;
+      }
+      #disclaimer{
+        color: mediumseagreen;
+        font-size: 50%;
+        opacity: .5;
       }
 
-      span {
-        font-size: 400%;
-        font-family: "Times New Roman", Times, serif;
+      #hand{
+        width: 30px;
+        transform: translate(150%, 5%);
       }
+      #hand:hover{
+        transform: translate(150%, 5%) scale(1.1);
+      }
+      #question{
+        text-align: right;
+        color: mediumseagreen;
+        margin-right: 10px;
+      }
+      @keyframes hop{
+        0% {
+          transform: scaleY(1);
+        }
+        25% {
+          transform: scaleY(.9) translate(0px, -20px);
+        }
+        50% {
+          transform: scaleY(105%) translate(0px, -30px);
+        }
+        70% {
+          transform: scaleY(92%) translate(0px, -25px);
+        }
+        90%{
+          transform: translate(0px, 0px) scaleY(90%);
+        }
     </style>
+    <script>
+      let highFive = document.getElementById("hand");
+      highFive.addEventListener("click", function(){ alert("yayyy!!!"); });
+      <!--document.getElementById("volumeOn").addEventListener(click, volumeOff; -->
+      <!--document.getElementById("volumeOff").addEventListener(click, volumeOn); -->
+    </script>
   </body>
 </html>
